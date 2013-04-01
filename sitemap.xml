@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://chris.bash.am/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/2.6.5" --><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.1.0.1" --><!-- generated-on="December 6, 2008 9:52 pm" --><urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>http://chris.bash.am/</loc>
+		<lastmod>2008-12-06T06:16:08+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://chris.bash.am/about/</loc>
+		<lastmod>2008-12-06T06:16:08+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://chris.bash.am/portfolio/reitz-football-photo-archive/</loc>
+		<lastmod>2008-12-06T06:07:55+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://chris.bash.am/portfolio/daybreak/</loc>
+		<lastmod>2008-12-06T03:31:05+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://chris.bash.am/portfolio/reitz-journalism/</loc>
+		<lastmod>2008-12-05T06:14:14+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://chris.bash.am/portfolio/lakeview-church/</loc>
+		<lastmod>2008-12-05T05:57:49+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+</urlset>
