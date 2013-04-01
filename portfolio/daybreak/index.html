@@ -1,0 +1,183 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+
+    <title>Daybreak  |  Chris Basham</title>
+    
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
+	<meta name="distribution" content="global" />
+	<meta name="robots" content="follow, all" />
+	<meta name="generator" content="WordPress 2.8.4" />
+    
+	<link rel="stylesheet" href="../../wp-content/themes/cbtheme/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="Chris Basham RSS Feed" href="../../feed/" />
+	<link rel="pingback" href="../../xmlrpc.php" />
+	
+	<meta name='robots' content='noindex,nofollow' />
+<link rel="alternate" type="application/rss+xml" title="Chris Basham &raquo; Daybreak Comments Feed" href="../../portfolio/daybreak/feed/" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Chris Basham' href='../../' />
+<link rel='start' title='Daybreak' href='daybreak.html' />
+<link rel='next' title='Reitz Football Photo Archive' href='../../portfolio/reitz-football-photo-archive/' />
+<meta name="generator" content="WordPress 2.8.4" />
+
+ <!-- AStickyPostOrderER (Version: 0.2.2.8) -->
+<!-- Google Analytics Tracking by Google Analyticator: http://cavemonkey50.com/code/google-analyticator/ -->
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+
+	<script type="text/javascript">
+		var pageTracker = _gat._getTracker("UA-837636-1");
+		pageTracker._initData();
+		pageTracker._trackPageview();
+	</script>
+	
+</head>
+
+<body>
+
+<div id="header">
+
+	<div class="logo"><a href="../../"><strong>chris</strong>.<span>bash</span>.<span>am</span></a></div>
+	
+	<ul>
+	
+		
+		<li><a href="../../" title="Home">Home</a></li>
+
+				
+		<li class="current_page_item"><a href="../../portfolio/" title="Portfolio">Portfolio</a></li>
+		
+		<li class="page_item page-item-2"><a href="../../about/" title="About">About</a></li>
+	
+			
+	</ul>
+		
+	<hr/>
+	
+</div>
+
+
+		
+
+<div id="headline">
+	<h1>Daybreak</h1>
+</div>
+
+<div class="body">
+	
+	<div class="col1 image-header">
+		<img src="../../wp-content/uploads/2008/12/daybreak-main.jpg" alt="Daybreak" title="Daybreak" />
+	</div>
+	
+	<div class="col2-wrap">
+	
+		<div class="col2">
+			
+			<p class="lead"><a href="http://daybreak.bash.am">Daybreak</a> is a collaborative <strong>design experiment</strong> with <a href="http://www.tonydewan.com/" onclick="javascript:pageTracker._trackPageview ('/outbound/www.tonydewan.com');">Tony Dewan</a> as a submission to the <a href="http://www.csszengarden.com/" onclick="javascript:pageTracker._trackPageview ('/outbound/www.csszengarden.com');">CSS Zen Garden</a> project. Tony produced the graphics and aesthetic of the piece, while I <strong>coded</strong> the CSS and solved technical roadblocks.</p>
+		
+			<h3>Concept</h3>
+
+<p>After reviewing the CSS Zen Garden's <a href="http://www.mezzoblue.com/zengarden/alldesigns/">official designs</a>, we quickly discovered a trend in the submissions: They were chosen due to <a title="Dazzling Beauty by Deny Sri Supriyono" href="http://www.csszengarden.com/?cssfile=195/195.css">design aesthetics</a> or <a title="Retro Theater by Eric Rogé" href="http://www.csszengarden.com/?cssfile=202/202.css">technical complexity</a>. For our experiment, we didn't want to force ourselves into either category, so we spent considerable time on both  strategies.</p>
+
+<p>Early in the conceptual stage, we decided we wanted to tell a story as the user interacts with the design. To understand how to accomplish this, you must first understand how a story is traditionally driven: The narrative progresses at the speed of reader, i.e. the reader is in control of the story. In terms of web browsing, one of the most fundamental controls granted to a user is the ability to scroll a page. Based on that precept, we wanted to tell a story as the user scrolls the page.</p>
+
+<p>Eventually, we settled on the idea of the transition from night to day. Since it is an experience everyone shares, the story is instantly relatable to the user. Given the idea, the design would require several elements to tell the story: The moon and sun to respectively establish the night and day and a sky assisting the transition between the two. In order to give a visual anchor to the user and the world in this story, the foreground must be the ground to the scrolling moon, sun, and sky. As an anchor to this world, the element should be something that is natural, strong, and enduring. A blooming tree would be the anchor to this story.</p>
+
+<h3>Technical Roadblocks</h3>
+
+<p>To technically achieve a smooth transition from the spectrum of cool to warm colors while overlaying a visually complex tree element, the tree would need to be created as a 24-bit PNG image. (24-bit includes an alpha channel, rather than merely a "transparent" pixel, like 8-bit PNG and GIF.)   However, as web designers, we understand the consequences of such power: It summons the need to resolve the problem for the sake of backwards compliance. For this case, Internet Explorer 6 has a notorious history of torturing designers by not naturally supporting 24-bit PNG transparency. Though the blue-block-of-death can be fixed relatively quickly with some JavaScript hackery, this will not work for the CSS Zen Garden project, since all submissions run on the same HTML template, i.e. style sheets and images are the only tools that can be utilized.</p>
+
+<p>Thus, we have three options:</p>
+
+<ul>
+	<li>Comply to the lowest common browser, and remove any transparent PNG images, forcing us to re-brainstorm our concept;</li>
+	<li>Continue to use transparent PNGs and forego backwards compatibility; or</li>
+	<li>Produce a non-PNG version specifically for IE6.</li>
+</ul>
+
+<p>To improve our chances to be accepted as an official design and strengthen the piece technically, we chose option three. Therefore, any PNG images were converted to GIF.</p>
+
+<p>The only alteration to this process were the rendering of the section headlines. Since the headline font was previously rendered in the transparent image, the selectable text was removed from the viewing area. However, without gradual transparency granted by an alpha channel, complex serif text on a transparent background appear jagged and unpolished. Thus, for IE6, any headline text was reintroduced in the viewport rendered with a generic serif font and not pre-rendered in the image with a custom font.</p>
+
+<p>As another roadblock, IE6 cannot fix elements to the bottom of the viewport naturally in CSS. The way around this was to produce a different but aesthetically similar visual anchor and affix it absolutely to the top of the page. This new image places the user "underneath" the tree, seeming as if selected branches are hanging low in the top of the user's peripheral vision.</p>
+
+		
+		</div>
+		
+		<div class="col2">
+			
+			<h3>Summary</h3>
+			
+			<dl> <dt><span>Visit</span></dt> <dd><span><a href="http://daybreak.bash.am">http://daybreak.bash.am</a></span></dd> <dt><span>Completed</span></dt> <dd><span>December 2007</span></dd> <dt><span>Creating</span></dt> <dd><span>Design Experiment</span></dd> <dt><span>Role</span></dt> <dd><span>CSS Development</span></dd></dl>			
+			
+
+<h3>Screenshots</h3>
+
+<p class="image"><a href="../../wp-content/uploads/2008/12/daybreak-footer.jpg"><img src="../../wp-content/uploads/2008/12/daybreak-footer-439x267.jpg" alt="Daybreak Footer" title="As the page scrolls toward the bottom of the screen, the sun dawns revealing additional navigation." width="439" height="267" /></a><span>As the page scrolls toward the bottom of the screen, the sun dawns revealing additional navigation.</span></p>
+
+<p class="image"><a href="../../wp-content/uploads/2008/12/daybreak-ie6.jpg"><img width="440" height="319" title="Alternative graphics were produced to gracefully degrade for in IE6." alt="Daybreak in IE6." src="../../wp-content/uploads/2008/12/daybreak-ie6-440x319.jpg"/></a><span>Alternative graphics were produced to gracefully degrade for <abbr title="Internet Explorer 6">IE6</abbr>.</span></p>			
+		</div>
+		
+		<hr/>
+	
+	</div>
+	
+</div>
+
+
+	
+
+<div class="footer"><div class="col1">
+	
+	<h3><small>More</small> Projects</h3>
+
+	<ul class="thumblist">
+	
+	<li><a href="../../portfolio/lakeview-church/"><img width="120" height="65" title="Lakeview Church" alt="Lakeview Church" src="../../wp-content/uploads/2008/12/lakeview-main-150x64.jpg"/><strong>Lakeview Church</strong></a></li><li><a href="../../portfolio/reitz-journalism/"><img width="120" height="65" title="Reitz Journalism" alt="Reitz Journalism" src="../../wp-content/uploads/2008/12/reitzjournalism-main-150x75.jpg"/><strong>Reitz Journalism</strong></a></li><li><a href="../../portfolio/reitz-football-photo-archive/"><img width="120" height="65" title="Reitz Football Photo Archive" alt="Reitz Football Photo Archive" src="../../wp-content/uploads/2008/12/reitzfootballarchive-main-150x65.jpg"/><strong>Reitz Football Photo Archive</strong></a></li><li><a href="daybreak.html"><img width="120" height="65" title="Daybreak" alt="Daybreak" src="../../wp-content/uploads/2008/12/daybreak-main-150x52.jpg"/><strong>Daybreak</strong></a></li>
+	</ul>
+	
+	<hr/>
+	
+	<p class="links"><a href="../../portfolio/"><strong>All Projects &raquo;</strong></a></p>
+				
+	<hr/>
+	
+</div></div>
+	
+<div class="footer"><div class="col1">
+	
+	<ul>
+
+		<li class="separator"><a href="http://creativecommons.org/licenses/by-nc-nd/3.0/" title="Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported">Copyright &copy;</a> 2007-2013 <a href="../../">Chris Basham</a></li>
+		
+		<li><a href="http://validator.w3.org/check/referer" title="Check the validity of this site's XHTML">XHTML</a></li>
+		
+		<li class="separator"><a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site's CSS">CSS</a></li>
+		
+		<li><a href="../../" title="Home">Home</a></li>
+
+				
+		<li><a href="../../portfolio/" title="Portfolio">Portfolio</a></li>
+		
+		<li class="page_item page-item-2"><a href="../../about/" title="About">About</a></li>
+	
+
+	</ul>
+	
+	<hr/>
+	
+</div></div>
+
+
+</body>
+
+</html>
